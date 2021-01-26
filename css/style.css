@@ -1,0 +1,740 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+/* * {
+    overflow-x: hidden;
+} */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  color: #333;
+  overflow-y: scroll;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  /* scroll-snap-type: mandatory; */
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y proximity;
+  /* scroll-padding-top: 95px; */
+}
+
+section {
+  padding: 1rem;
+  min-height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  text-align: center;
+  position: relative;
+}
+
+header {
+  background: #111;
+  overflow: hidden;
+}
+
+.headline {
+  position: relative;
+  height: 100vh;
+  color: #fff;
+  text-align: center;
+  background: url("../Figures/mars.jpg") no-repeat center center;
+  background-size: cover;
+}
+.headline:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(17, 17, 17, 0.5);
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  z-index: 5;
+  /* justify-content: space-around;
+  align-items: center; */
+  flex-direction: column;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-animation: fade-in 0.75s 0.25s ease-in forwards;
+  animation: fade-in 0.75s 0.25s ease-in forwards;
+}
+.inner h1 b {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.inner h1 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 12vh;
+}
+
+.inner p {
+  max-width: 50vw;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 12vh;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding: 10px 10px;
+}
+nav.scrolled {
+  /* background:rgba(17, 17, 17, 0.9); */
+}
+nav ul {
+  float: right;
+  list-style: none;
+  padding: 25px;
+  margin: 0;
+}
+nav li {
+  position: relative;
+  /* font-family: 'Montserrat', sans-serif; */
+  /* font-size: 20px; */
+  display: inline-block;
+  padding: 0px 15px;
+  color: #fff;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+.nav-item {
+  position: relative;
+}
+
+.nav-item:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #fff;
+  transition: width 0.5s ease;
+  -webkit-transition: width 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  left: 0;
+  background: #fff;
+}
+
+.logo {
+  height: 75px;
+  float: left;
+}
+.logo:before,
+.logo:after {
+  position: absolute;
+  font-size: 7em;
+  font-weight: 300;
+  line-height: 0;
+  color: #fff;
+  top: 25px;
+}
+.logo img {
+  margin: auto;
+  max-height: 12vh;
+  cursor: pointer;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.logo img:hover {
+  transform: scale(1.2) translateX(25%) translateY(25%);
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 65vh;
+  z-index: -1;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: white;
+}
+
+.foot {
+  height: 40vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../Figures/stars.jpg");
+  background-size: contain;
+}
+
+.footer-logo {
+  flex: 1;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.footer-logo img {
+  max-height: 30vh;
+  border-radius: 10%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  cursor: pointer;
+  position: relative;
+  opacity: 1;
+}
+
+.footer-logo .logo-container:hover {
+  background-image: url("../Figures/black_hole.jfif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* opacity: 0; */
+  border-radius: 50%;
+  /* transition: opacity 1s ease-out; */
+  /* -webkit-animation: fade-in 0.75s 0.25s ease-in forwards;
+  animation: fade-in 0.75s 0.25s ease-in forwards; */
+}
+/* .footer-logo .logo-container:hover {
+    opacity: 1;
+} */
+
+.footer-nav {
+  flex: 1;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  min-height: 30vh;
+  border-left: 1px solid white;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-nav ul li {
+    position: relative;
+}
+
+.footer-nav ul li a {
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  border-bottom: 2px solid black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer-nav ul li a:before {
+  content: "[";
+  left: -5px;
+}
+
+.footer-nav ul li a:after {
+  content: "]";
+  right: -5px;
+}
+
+.footer-nav ul li a:before,
+.footer-nav ul li a:after {
+  position: absolute;
+  opacity: 0;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.footer-nav ul li a:hover:before,
+.footer-nav ul li a:hover:after {
+  opacity: 0.7;
+}
+
+.footer-nav ul li a:hover:before {
+  left: -20px;
+}
+
+.footer-nav ul li a:hover:after {
+  right: -20px;
+}
+
+.footer-links {
+  min-height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.footer-links ul {
+  min-height: 10vh;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-links ul li a {
+  color: black;
+  font-size: 5vh;
+  padding: 4px;
+}
+
+.footer-links ul li #mail:hover {
+  color: rgb(253, 221, 83);
+  transition: 0.3s;
+}
+
+.footer-links ul li #insta:hover {
+  color: #f04c5a;
+  transition: 0.3s;
+}
+
+.footer-links ul li #fb:hover {
+  color: rgb(66, 103, 178);
+  transition: 0.3s;
+}
+
+.footer-links ul li #youtube:hover {
+  color: red;
+  transition: 0.3s;
+}
+
+.copyright {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../Figures/stars.jpg");
+  background-size: contain;
+}
+
+.copyright p {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+}
+
+main {
+  background-color: rgb(43, 106, 116);
+  margin-bottom: 65vh;
+}
+
+.welcome {
+  padding: 5px;
+  min-height: 100vh;
+  background-image: url("../Figures/mars.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.welcome .title {
+  margin-top: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  transform: translate(0%, 0%);
+}
+
+.welcome .title h1 b {
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.welcome .title h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.welcome .title-des p {
+  max-width: 50vw;
+  transform: translate(50%, 0%);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.title-button button,
+.what-button button {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid white;
+  transform: translateX(0%);
+  cursor: pointer;
+}
+
+.title-button button:hover,
+.what-button button:hover {
+  border-color: rgba(0, 0, 0, 0);
+  transition: 0.3s ease;
+}
+
+.title-button button a,
+.what-button button a {
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+}
+
+.inner c, section c {
+  font-size: 12px;
+  color: white;
+}
+
+.about {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  background-color: black;
+  background-image: url("../Figures/stars.jpg");
+  color: white;
+}
+
+.about .astronomy {
+  display: flex;
+  justify-content: space-around;
+}
+
+.about .astronomy img {
+  max-height: 30vh;
+  border-radius: 10%;
+}
+
+section h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+section p {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 50vw;
+  transform: translateX(50%);
+}
+
+.about p b,
+.what p b {
+  font-size: 25px;
+  color: rgb(253, 221, 83);
+  font-weight: 600;
+}
+
+.what {
+  padding: 5px;
+  background-image: url("../Figures/bubble.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.events {
+  background-image: url("../Figures/veil_nebula.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  background-color: #040409;
+}
+
+.events h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.events .posters {
+  display: flex;
+  justify-content: space-around;
+}
+
+.events .posters img {
+  background-color: white;
+  padding: 10px;
+  max-width: 80vw;
+  max-height: 60vh;
+}
+
+.updates {
+  background-image: url("../Figures/sunset.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+
+.updates h1 {
+  font-size: 45px;
+  font-weight: 600;
+  color: white;
+}
+
+.updates .iframes {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.updates .iframes .fb .fb-page,
+.updates .iframes .fb .fb-page blockquote {
+  width: 30vw;
+  max-height: 30vh;
+}
+
+.updates .iframes .youtube iframe {
+  width: 40vw;
+  min-height: 22vw;
+  max-height: 30vh;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-links ul li a,
+  .footer-nav ul li a {
+    font-size: 12px;
+  }
+  .copyright p {
+    font-size: 10px;
+  }
+  h1 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 15px;
+  }
+  button a {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  .nav-links {
+    background-color: white;
+    position: absolute;
+    right: 0px;
+    top: 15vh;
+    width: 100vw;
+    height: 85vh;
+    z-index: 10;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links ul {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links ul li a {
+    color: black;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .nav-links ul li a:hover {
+    border-color: rgb(43, 106, 116);
+    color: rgb(43, 106, 116);
+  }
+  .burger {
+    display: block;
+  }
+  .nav-links-active {
+    transform: translateX(0%);
+  }
+  h1 {
+    font-size: 32px;
+  }
+  .what p b {
+    font-size: 16px;
+  }
+  p {
+    font-size: 14px;
+  }
+  button a {
+    font-size: 14px;
+  }
+  .inner c, section c {
+    font-size: 10px;
+  }
+  .updates .iframes {
+    margin: 20px;
+    flex-direction: column-reverse;
+  }
+  .updates .iframes .youtube {
+    margin-bottom: 20px;
+  }
+  .updates .iframes .youtube iframe {
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .footer-nav ul li a {
+    font-size: 10px;
+  }
+  .copyright p {
+    font-size: 8px;
+  }
+  .footer-logo img {
+    max-height: 20vh;
+  }
+  .footer-nav {
+    min-height: 25vh;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .what p b {
+    font-size: 14px;
+  }
+  button a {
+    font-size: 12px;
+  }
+  .inner c, section c {
+    font-size: 8px;
+  }
+  .updates .iframes {
+    margin-top: 20px;
+    flex-direction: column-reverse;
+  }
+  .updates .iframes .youtube {
+    margin-bottom: 20px;
+  }
+  .updates .iframes .youtube iframe {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .footer-nav ul li a {
+    font-size: 8px;
+  }
+  .copyright p {
+    font-size: 7px;
+  }
+  .footer-logo img {
+    max-height: 18vh;
+  }
+  .footer-nav {
+    min-height: 25vh;
+  }
+  .welcome .title h1,
+  .welcome .title h1 b,
+  .about h1,
+  .what h1,
+  .events h1,
+  .updates h1 {
+    font-size: 24px;
+  }
+  .what p b {
+    font-size: 12px;
+  }
+  .welcome .title-des p,
+  .about p,
+  .what p {
+    font-size: 10px;
+  }
+  .welcome .title-button button a,
+  .what .what-button button a {
+    font-size: 10px;
+  }
+  .about c,
+  .welcome c,
+  .updates c,
+  .what c {
+    font-size: 8px;
+  }
+}
