@@ -510,11 +510,18 @@ section p {
   justify-content: space-around;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 300px;
+  margin-bottom: 330px;
 }
 
 .person_card{
   background-color:rgba(255,255,255,0.5);
+  transition: all .5s ease-in-out;
+}
+
+.person_card:hover {
+  transform: scale(1.1); 
+  background-color:rgba(255,255,255,0.8);
+
 }
 
 .events {
