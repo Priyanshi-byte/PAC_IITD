@@ -196,6 +196,7 @@ footer {
 	justify-content: space-evenly;
 	flex-direction: column;
 	color: white;
+	margin-bottom: -10px;
 }
 
 .foot {
