@@ -92,9 +92,10 @@ header {
 }
 
 nav {
+	margin-top: -10px;
 	position: fixed;
 	width: 100%;
-	z-index: 10;
+	z-index: 20;
 	padding: 10px 10px;
 }
 nav.scrolled {
@@ -343,7 +344,7 @@ footer {
 }
 
 .copyright {
-	min-height: 10vh;
+	min-height: 5vh;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
