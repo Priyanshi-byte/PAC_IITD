@@ -1352,3 +1352,82 @@ section p {
 		transform: translateY(-2000px);
 	}
 }
+
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #222;
+	z-index: 9999999;
+	height: 100%;
+	width: 100%;
+	font-family: 'Bazar';
+}
+
+.no-js #preloader,
+.oldie #preloader {
+	display: none;
+}
+
+#loader {
+	margin-top: 20vh;
+}
+
+#loader svg {
+	display: block;
+	font: 250px 'Bazar';
+	width: 100vw;
+	height: 200px;
+	margin: 0 auto;
+}
+
+.spacer {
+	min-height: 140px;
+}
+
+.text-copy {
+	fill: none;
+	stroke: white;
+	stroke-dasharray: 6% 29%;
+	stroke-width: 5px;
+	stroke-dashoffset: 0%;
+	animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+	stroke: #dc02f0;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+	stroke: #8c04e6;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+	stroke: #dd86ff;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+	stroke: #c201fd;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+	stroke: #7f31fd;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+	100% {
+		stroke-dashoffset: -35%;
+	}
+}
+
+.t-yellow {
+	color: #fdb731 !important;
+}
