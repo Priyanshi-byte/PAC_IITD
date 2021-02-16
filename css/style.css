@@ -492,11 +492,11 @@ section p {
 }
 
 .team {
-	background-image: url('../Figures/team_bg.jpg');
+	background-image: url('../Figures/space_rep.jpg');
 	/*background-image: url("../Figures/sunset.jpg");*/
-	background-size: cover;
+	/*background-size: cover;*/
 	background-position: center;
-	/*background-repeat: no-repeat;*/
+	background-repeat: repeat;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
@@ -504,26 +504,27 @@ section p {
 }
 
 .team_execs {
-	background-image: url('../Figures/back2.jpeg');
+	background-image: url('../Figures/space_rep_2.jpg');
 	/*background-image: url("../Figures/sunset.jpg");*/
-	background-size: cover;
+	/*background-size: cover;*/
 	background-position: center;
-	/*background-repeat: no-repeat;*/
+	background-repeat: repeat;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
 	text-align: center;
-	margin-bottom: 330px;
+	
 }
 
 .person_card {
-	background-color: rgba(255, 255, 255, 0.5);
-	transition: all 0.5s ease-in-out;
+	background-color: rgba(255, 255, 255, 1);
+	transition: all 0.25s ;
 }
 
 .person_card:hover {
 	transform: scale(1.1);
-	background-color: rgba(255, 255, 255, 0.8);
+	background-color: rgba(255, 255, 255, 1.0);
+	/*color: rgba(255, 255, 255, 1);*/
 }
 
 .events {

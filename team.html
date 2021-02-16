@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: black;">
 	<head>
 		<meta charset="UTF-8" />
 		<meta
@@ -22,10 +22,22 @@
 			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
 			rel="stylesheet"
 		/>
+
+		<script type="text/javascript">
+
+			window.onscroll = nav_scroll;
+			function nav_scroll () { 
+			    var scrollTop = window.pageYOffset;
+			    // console.log(scrollTop);
+			    document.getElementsByTagName("nav")[0].setAttribute("style", "background-color: rgba(0, 0, 0, "+ Math.pow((scrollTop)/300, 2) + ");");
+
+			};
+			
+		</script>
 	</head>
 	<body>
 		<header>
-			<nav>
+			<nav id = "navbar">
 				<div class="logo">
 					<img
 						src="Figures/logo_transparent.png"
@@ -39,23 +51,6 @@
 					<li><a class="nav-item" href="contact.html">CONTACT</a></li>
 				</ul>
 			</nav>
-			<div class="headline">
-				<div class="inner">
-					<div class="title">
-						<h1>
-							<b>THE PHYSICS & ASTRONOMY CLUB</b><br />
-							IIT DELHI
-						</h1>
-					</div>
-					<div class="title-button">
-						<button>
-							<a href="https://caic.iitd.ac.in/pac">MORE ABOUT US</a>
-						</button>
-					</div>
-					<br />
-					<c>MARTIAN SCENERY CAPTURED BY CURIOSITY: NASA/JPL-CALTECH/MSSS</c>
-				</div>
-			</div>
 			<div id="stars"></div>
 			<div id="stars2"></div>
 			<div id="stars3"></div>
@@ -74,9 +69,10 @@
 			</h1>
 
 			<div
-				class="container grid mx-auto grid-cols-1 lg:grid-cols-3 gap-8 pb-10"
+				class="container grid mx-auto grid-cols-1 lg:grid-cols-9 gap-8 pb-10 "
 			>
-				<div class="card lg:col-span-3" draggable="true">
+				<div class="card lg:col-span-2" draggable="true"></div>
+				<div class="card lg:col-span-5" draggable="true">
 					<div class="person_card lg: rounded-lg lg:rounded-lg shadow-2xl">
 						<div style="text-align: right">
 							<span
@@ -101,8 +97,9 @@
 						</div>
 					</div>
 				</div>
+				<div class="card lg:col-span-2" draggable="true"></div>
 
-				<div class="card" draggable="true">
+				<div class="card lg:col-span-3" draggable="true">
 					<div class="lg: rounded-lg lg:rounded-lg shadow-2xl person_card">
 						<div style="text-align: right">
 							<span
@@ -128,7 +125,7 @@
 					</div>
 				</div>
 
-				<div class="card" draggable="true">
+				<div class="card lg:col-span-3" draggable="true">
 					<div class="lg: rounded-lg lg:rounded-lg shadow-2xl person_card">
 						<div style="text-align: right">
 							<span
@@ -154,7 +151,7 @@
 					</div>
 				</div>
 
-				<div class="card" draggable="true">
+				<div class="card lg:col-span-3" draggable="true">
 					<div class="lg: rounded-lg lg:rounded-lg shadow-2xl person_card">
 						<div style="text-align: right">
 							<span
@@ -180,7 +177,7 @@
 					</div>
 				</div>
 
-				<div class="card" draggable="true">
+				<div class="card lg:col-span-3" draggable="true">
 					<div class="lg: rounded-lg lg:rounded-lg shadow-2xl person_card">
 						<div style="text-align: right">
 							<span
@@ -206,7 +203,7 @@
 					</div>
 				</div>
 
-				<div class="card" draggable="true">
+				<div class="card lg:col-span-3" draggable="true">
 					<div class="lg: rounded-lg lg:rounded-lg shadow-2xl person_card">
 						<div style="text-align: right">
 							<span
@@ -232,7 +229,7 @@
 					</div>
 				</div>
 
-				<div class="card" draggable="true">
+				<div class="card lg:col-span-3" draggable="true">
 					<div class="lg: rounded-lg lg:rounded-lg shadow-2xl person_card">
 						<div style="text-align: right">
 							<span
@@ -264,13 +261,13 @@
 			<!-- </div> -->
 		</section>
 
-		<section class="team_execs">
+		<section class="team_execs" style="margin-bottom: 325px;">
 			<!-- <div class=" flex items-center h-auto lg:h-screen flex-wrap mx-auto "> -->
 
 			<!--Main Col-->
 
 			<div
-				class="container grid mx-auto grid-cols-1 lg:grid-cols-12 gap-8 pb-10 pt-10"
+				class="container grid mx-auto grid-cols-1 lg:grid-cols-12 gap-20 pb-10 pt-10"
 			>
 				<div class="card lg:col-span-3" draggable="true">
 					<div class="person_card lg: rounded-lg lg:rounded-lg shadow-2xl">
@@ -784,10 +781,13 @@
 				</div>
 			</div>
 		</section>
+		
 		<div id="stars"></div>
 		<div id="stars2"></div>
 		<div id="stars3"></div>
+
 		<footer>
+			
 			<div class="footer-links">
 				<ul>
 					<li>
@@ -825,7 +825,7 @@
 				</div>
 				<div class="footer-nav">
 					<ul>
-						<li><a href="home.html" class="nav-link" id="active">HOME</a></li>
+						<li><a href="index.html" class="nav-link" id="active">HOME</a></li>
 						<li><a href="team.html" class="nav-link">TEAM</a></li>
 						<li><a href="#" class="nav-link">PROJECTS</a></li>
 						<li><a href="contact.html" class="nav-link">CONTACT</a></li>

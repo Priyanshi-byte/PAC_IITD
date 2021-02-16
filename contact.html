@@ -20,6 +20,18 @@
 			rel="stylesheet"
 		/>
 
+		<script type="text/javascript">
+
+			window.onscroll = nav_scroll;
+			function nav_scroll () { 
+			    var scrollTop = window.pageYOffset;
+			    // console.log(scrollTop);
+			    document.getElementsByTagName("nav")[0].setAttribute("style", "background-color: rgba(0, 0, 0, "+ Math.pow((scrollTop)/300, 2) + ");");
+
+			};
+			
+		</script>
+
 		<style></style>
 	</head>
 	<body>
