@@ -23,6 +23,24 @@
 			rel="stylesheet"
 		/>
 
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;800&display=swap"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+		/>
+
 		<script type="text/javascript">
 
 			var scrollValue = 3*window.screen.height/4;
@@ -275,6 +293,10 @@
 			<!-- <div class=" flex items-center h-auto lg:h-screen flex-wrap mx-auto "> -->
 
 			<!--Main Col-->
+
+			<div id="stars"></div>
+			<div id="stars2"></div>
+			<div id="stars3"></div>
 
 			<div
 				class="container grid mx-auto grid-cols-1 lg:grid-cols-12 gap-20 pb-10 pt-10"
@@ -790,65 +812,63 @@
 					</div>
 				</div>
 			</div>
+			<div id="stars"></div>
+			<div id="stars2"></div>
+			<div id="stars3"></div>
 		</section>
-		
-		<div id="stars"></div>
-		<div id="stars2"></div>
-		<div id="stars3"></div>
 
 		<div>
+
 			<div class="mr-10"></div>
-			<footer class="w-full flex">
-				<div class="footer-links absolute invisible">
+			<footer>
+			<div class="footer-links">
+				<ul>
+					<li>
+						<a id="mail" href="mailto:physicsastronomyclubiitd@gmail.com "
+							><i class="fa fa-envelope"></i
+						></a>
+					</li>
+					<li>
+						<a id="insta" href="https://www.instagram.com/pac_iitd/"
+							><i class="fa fa-instagram"></i
+						></a>
+					</li>
+					<li>
+						<a id="fb" href="https://www.facebook.com/PhysicsAndAstronomyIITD/ "
+							><i class="fa fa-facebook"></i></a
+						><br />
+					</li>
+					<li>
+						<a
+							id="youtube"
+							href="https://www.youtube.com/channel/UCetVYW24b8e4ukDjNaU0n2A "
+							><i class="fa fa-youtube"></i></a
+						><br />
+					</li>
+				</ul>
+			</div>
+			<div class="foot">
+				<div class="footer-logo">
+					<div class="logo-container">
+						<img
+							src="Figures/logo_transparent.png"
+							alt="PHYSICS & ASTRONOMY CLUB"
+						/>
+					</div>
+				</div>
+				<div class="footer-nav">
 					<ul>
-						<li>
-							<a id="mail" href="mailto:physicsastronomyclubiitd@gmail.com "
-								><i class="fa fa-envelope"></i
-							></a>
-						</li>
-						<li>
-							<a id="insta" href="https://www.instagram.com/pac_iitd/"
-								><i class="fa fa-instagram"></i
-							></a>
-						</li>
-						<li>
-							<a
-								id="fb"
-								href="https://www.facebook.com/PhysicsAndAstronomyIITD/ "
-								><i class="fa fa-facebook"></i></a
-							><br />
-						</li>
-						<li>
-							<a
-								id="youtube"
-								href="https://www.youtube.com/channel/UCetVYW24b8e4ukDjNaU0n2A "
-								><i class="fa fa-youtube"></i></a
-							><br />
-						</li>
+						<li><a href="index.html" class="nav-link" id="active">HOME</a></li>
+						<li><a href="#" class="nav-link">TEAM</a></li>
+						<li><a href="#" class="nav-link">PROJECTS</a></li>
+						<li><a href="contact.html" class="nav-link">CONTACT</a></li>
 					</ul>
 				</div>
-				<div class="foot">
-					<div class="footer-logo">
-						<div class="logo-container">
-							<img
-								src="Figures/logo_transparent.png"
-								alt="PHYSICS & ASTRONOMY CLUB"
-							/>
-						</div>
-					</div>
-					<div class="footer-nav">
-						<ul>
-							<li><a href="home.html" class="nav-link" id="active">HOME</a></li>
-							<li><a href="team.html" class="nav-link">TEAM</a></li>
-							<li><a href="#" class="nav-link">PROJECTS</a></li>
-							<li><a href="contact.html" class="nav-link">CONTACT</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="copyright">
-					<p>COPYRIGHT &copy 2021 PHYSICS & ASTRONOMY CLUB, IIT DELHI</p>
-				</div>
-			</footer>
+			</div>
+			<div class="copyright">
+				<p>COPYRIGHT &copy 2021 PHYSICS & ASTRONOMY CLUB, IIT DELHI</p>
+			</div>
+		</footer>
 			<div id="preloader">
 				<div id="loader">
 					<svg viewBox="0 0 960 300">
@@ -878,6 +898,8 @@
 				</div>
 			</div>
 		</div>
+		
+		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 		<script src="./js/index.js"></script>
