@@ -24,12 +24,19 @@
 		/>
 		<script type="text/javascript">
 
-			window.onscroll = nav_scroll;
-			function nav_scroll () { 
-			    var scrollTop = window.pageYOffset;
-			    // console.log(scrollTop);
-			    document.getElementsByTagName("nav")[0].setAttribute("style", "background-color: rgba(0, 0, 0, "+ Math.pow((scrollTop)/300, 2) + ");");
-
+			window.onscroll = function() {
+			    var currentScrollPos = window.pageYOffset;
+			    document.getElementsByTagName("nav")[0].setAttribute("style", "background-color: rgba(0, 0, 0, "+ Math.pow((currentScrollPos)/scrollValue, 2) + ");");
+			    if (prevScrollpos >= currentScrollPos) {
+				  	document.getElementsByTagName("nav")[0].style.transitionDuration = "0.5s";
+				    document.getElementsByTagName("nav")[0].style.top = "0";
+				} else {
+			  		if(currentScrollPos > scrollValue){
+			  			document.getElementsByTagName("nav")[0].style.transform = "translateY(-20vh)";
+			  			document.getElementsByTagName("nav")[0].style.transitionDuration = "1s";
+			  		}
+				}
+				prevScrollpos = currentScrollPos;
 			};
 			
 		</script>
