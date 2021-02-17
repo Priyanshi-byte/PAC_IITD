@@ -25,6 +25,9 @@
 
 		<script type="text/javascript">
 
+			var scrollValue = 3*window.screen.height/4;
+			var prevScrollpos = window.pageYOffset;
+
 			window.onscroll = function() {
 			    var currentScrollPos = window.pageYOffset;
 			    document.getElementsByTagName("nav")[0].setAttribute("style", "background-color: rgba(0, 0, 0, "+ Math.pow((currentScrollPos)/scrollValue, 2) + ");");
