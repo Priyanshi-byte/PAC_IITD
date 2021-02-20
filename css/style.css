@@ -10,6 +10,7 @@ body {
 	font-family: 'Barlow', sans-serif;
 	color: #333;
 	overflow-y: scroll;
+	overflow-x: none;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -24,16 +25,16 @@ html {
 	scroll-behavior: smooth;
 	font-family: sans-serif;
 	 /*scroll-snap-type: proximity; */
-	scroll-snap-points-y: repeat(100vh);
-	scroll-snap-type: y proximity;
+/*	scroll-snap-points-y: repeat(100vh);
+	scroll-snap-type: y proximity;*/
 	/* scroll-padding-top: 95px; */
 }
 
 section {
 	padding: 1rem;
 	min-height: 100vh;
-	scroll-snap-align: start;
-	scroll-snap-stop: always;
+/*	scroll-snap-align: start;
+	scroll-snap-stop: always;*/
 	text-align: center;
 	position: relative;
 }
@@ -528,7 +529,7 @@ section p {
 	justify-content: space-around;
 	flex-direction: column;
 	text-align: center;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 }
 
 .team_execs {
@@ -541,37 +542,52 @@ section p {
 	justify-content: space-around;
 	flex-direction: column;
 	text-align: center;
-	background-attachment: fixed;
+	/*background-attachment: fixed;*/
 	
 }
 
-.person_card {
+/*.person_card {
 	background-color: rgba(255, 255, 255, 0);
 	
-	color: rgba(255, 255, 255, 0);
-	max-height: 225px;
+	color: rgba(255, 255, 255, 1);
+	max-height: 350px;
 	transition-delay: 0.2s;
 	transition: all 0.5s ;
 	pointer-events: auto;
+	opacity: 0;
+}*/
+
+.person_card {
+	opacity: 0;
+	max-height: 350px;
+	/*background-color: rgba(255, 255, 255, 1);*/
+	-webkit-transform: scale(0.1) rotateZ(0deg);
+          transform: translateX(0.1) rotateZ(0deg);
+	-webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  
+  -webkit-transition: opacity .3s .25s ease-out,
+              -webkit-transform 4s .25s cubic-bezier(0,1,.3,1);
+  will-change: transform, opacity;
+}
+
+.person_card.is-visible{
+	opacity: 1;
+	-webkit-transform: scale(1.1) rotateZ(0deg);
+        transform: translateX(1.1) rotateZ(0deg);
+    color: white;
 }
 
 .person_card:hover {
-	transform: scale(1.1);
-	background-color: rgba(255, 255, 255, 1.0);
-	color: black;
+	transform: scale(1.2);
 	max-height: 100vh;
-	transition-delay: 0.2s;
-	/*color: rgba(255, 255, 255, 1);*/
+	transition-delay: 0.1s;
 }
-.person_card .bg-indigo-500{
+
+.bg-indigo-500{
 
     visibility: hidden;
-    transition-delay: 0.2s;
-    transition: all 0.5s ;
-}
-.person_card:hover .bg-indigo-500{
-
-    visibility: visible;
+    
 }
 
 .events {
