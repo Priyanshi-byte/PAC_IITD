@@ -19,20 +19,31 @@ var $headline = $('.headline'),
 	$nav = $('nav'),
 	navHeight = 75;
 
-$(window).scroll(function () {
-	var scrollTop = $(this).scrollTop(),
-		headlineHeight = $headline.outerHeight() - navHeight,
-		navOffset = $nav.offset().top;
+// $(window).scroll(function () {
+// 	var scrollTop = $(this).scrollTop(),
+// 		headlineHeight = $headline.outerHeight() - navHeight,
+// 		navOffset = $nav.offset().top;
 
-	$headline.css({
-		opacity: 1 - scrollTop / headlineHeight,
-	});
-	$inner.children().css({
-		transform: 'translateY(' + scrollTop * 0.4 + 'px)',
-	});
-	if (navOffset > headlineHeight) {
-		$nav.addClass('scrolled');
-	} else {
-		$nav.removeClass('scrolled');
-	}
+// 	$headline.css({
+// 		opacity: 1 - scrollTop / headlineHeight,
+// 	});
+// 	$inner.children().css({
+// 		transform: 'translateY(' + scrollTop * 0.4 + 'px)',
+// 	});
+// 	if (navOffset > headlineHeight) {
+// 		$nav.addClass('scrolled');
+// 	} else {
+// 		$nav.removeClass('scrolled');
+// 	}
+// });
+
+const ps = document.querySelectorAll('p');
+const observer = new ResizeObserver(entries => {
+  for (let entry of entries) {
+    entry.target.classList[entry.target.scrollHeight > entry.contentRect.height ? 'add' : 'remove']('truncated');
+  }
+});
+
+ps.forEach(p => {
+  observer.observe(p);
 });
