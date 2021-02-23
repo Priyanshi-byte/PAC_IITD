@@ -1,111 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<link
-			href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-			rel="stylesheet"
-		/>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Physics & Astronomy Club</title>
-		<link rel="stylesheet" href="css/style.css" />
-		<link
-			rel="shortcut icon"
-			href="Figures/PAC.png"
-			type="image"
-			sizes="48x48"
-		/>
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;800&display=swap"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
-		/>
 
-		<script type="text/javascript">
+<head>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physics & Astronomy Club</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="Figures/PAC.png" type="image" sizes="48x48" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;800&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 
-			var scrollValue = 3*window.screen.height/4;
-			var prevScrollpos = window.pageYOffset;
+    <script type="text/javascript">
+        var scrollValue = 3 * window.screen.height / 4;
+        var prevScrollpos = window.pageYOffset;
 
-			window.onscroll = function() {
-			    var currentScrollPos = window.pageYOffset;
-			    document.getElementsByTagName("nav")[0].setAttribute("style", "background-color: rgba(0, 0, 0, "+ Math.pow((currentScrollPos)/scrollValue, 2) + ");");
-			    if (prevScrollpos >= currentScrollPos) {
-				  	document.getElementsByTagName("nav")[0].style.transitionDuration = "0.5s";
-				    document.getElementsByTagName("nav")[0].style.top = "0";
-				} else {
-			  		if(currentScrollPos > scrollValue){
-			  			document.getElementsByTagName("nav")[0].style.transform = "translateY(-20vh)";
-			  			document.getElementsByTagName("nav")[0].style.transitionDuration = "1s";
-			  		}
-				}
-				prevScrollpos = currentScrollPos;
-			};
-			
-		</script>
-	</head>
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            document.getElementsByTagName("nav")[0].setAttribute("style", "background-color: rgba(0, 0, 0, " + Math.pow((currentScrollPos) / scrollValue, 2) + ");");
+            if (prevScrollpos >= currentScrollPos) {
+                document.getElementsByTagName("nav")[0].style.transitionDuration = "0.5s";
+                document.getElementsByTagName("nav")[0].style.top = "0";
+            } else {
+                if (currentScrollPos > scrollValue) {
+                    document.getElementsByTagName("nav")[0].style.transform = "translateY(-20vh)";
+                    document.getElementsByTagName("nav")[0].style.transitionDuration = "1s";
+                }
+            }
+            prevScrollpos = currentScrollPos;
+        };
+    </script>
+</head>
 
-	<body>
-		<header>
-			<nav>
-				<div class="logo">
-					<img
-						src="Figures/logo_transparent.png"
-						alt="PHYSICS & ASTRONOMY CLUB"
-					/>
-				</div>
-				<ul class="nav-links">
-					<li><a class="nav-item active" href="#">HOME</a></li>
-					<li><a class="nav-item" href="team.html">TEAM</a></li>
-					<li><a class="nav-item" href="#">PROJECTS</a></li>
-					<li><a class="nav-item" href="contact.html">CONTACT</a></li>
-				</ul>
-			</nav>
-			<div class="headline">
-				<div class="inner">
-					<div class="title">
-						<h1>
-							<b>THE PHYSICS & ASTRONOMY CLUB</b><br />
-							IIT DELHI
-						</h1>
-					</div>
-					<div class="title-des">
-						<p>
-							Through this club, we aim to create an engaging environment where
-							scientific thought and logical reasoning is encouraged to tackle
-							both previously solved and unsolved questions regarding the
-							universe and the laws of physics <br />
-							<br />
-							We focus on gathering enthusiasts and facilitating knowledge
-							sharing across all groups of students and to capture the interest
-							of all the students in the mysteries of the universe. We also
-							promote learning from the experts of the research field and the
-							people in the industry
-						</p>
-					</div>
-					<div class="title-button">
-						<button>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Figures/logo_transparent.png" alt="PHYSICS & ASTRONOMY CLUB" />
+            </div>
+            <ul class="nav-links">
+                <li><a class="nav-item active" href="#">HOME</a></li>
+                <li><a class="nav-item active" href="https://home.iitd.ac.in/">IIT DELHI</a></li>
+                <li><a class="nav-item" href="team.html">TEAM</a></li>
+                <li><a class="nav-item" href="#">PROJECTS</a></li>
+                <li><a class="nav-item" href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+        <div class="headline">
+            <div class="inner">
+                <div class="title">
+                    <h1>
+                        <b>THE PHYSICS & ASTRONOMY CLUB</b><br /> IIT DELHI
+                    </h1>
+                </div>
+                <div class="title-des">
+                    <p>
+                        Through this club, we aim to create an engaging environment where scientific thought and logical reasoning is encouraged to tackle both previously solved and unsolved questions regarding the universe and the laws of physics <br
+                        />
+                        <br /> We focus on gathering enthusiasts and facilitating knowledge sharing across all groups of students and to capture the interest of all the students in the mysteries of the universe. We also promote learning from the experts
+                        of the research field and the people in the industry
+                    </p>
+                </div>
+                <div class="title-button">
+                    <button>
 							<a href="https://caic.iitd.ac.in/pac">MORE ABOUT US</a>
 						</button>
-					</div>
-					<br />
-					<c>MARTIAN SCENERY CAPTURED BY CURIOSITY: NASA/JPL-CALTECH/MSSS</c>
-				</div>
-			</div>
-		</header>
-		<main>
-			<!-- <section class="welcome">
+                </div>
+                <br />
+                <c>MARTIAN SCENERY CAPTURED BY CURIOSITY: NASA/JPL-CALTECH/MSSS</c>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- <section class="welcome">
             <div class='title'>
                 <h1><b>THE PHYSICS & ASTRONOMY CLUB</b><br> IIT DELHI</h1>
             </div>
@@ -120,51 +90,41 @@
             <c>MARTIAN SCENERY CAPTURED BY CURIOSITY: NASA/JPL-CALTECH/MSSS</c>
         </section> -->
 
-			<section class="about">
-				<div class="container grid mx-auto grid-cols-1 lg:grid-cols-6  " style="min-height: 100%;min-width: 100%;">
-					<div class="left-img invisible lg:visible lg:col-span-2 animate-left show-on-scroll"></div>
-					<div class="lg:col-span-2">
-						<div class="container grid mx-auto grid-cols-1 pt-20" >
-							<div class="lg:col-span-1 " >
-								<h1>OUR HISTORY</h1>
-							</div>
-							<div class="lg:col-span-1" align="center">
-								<h4 class = "history-text">
-									The Physics and Astronomy Club IIT Delhi, <br>
-									is the successor to the <br>
-									Astronomy Club of Indian Institute of Technology, Delhi,<br>
-									which had been established in 2011, <br>
-									and had been operational under <br>
-									Technocracy, CAIC, IIT Delhi
-								</h4>
-							</div>
-							<div class="astronomy lg:col-span-1">
-								<img src="Figures/astronomy_club_inv.png" alt="ASTRONOMY CLUB" />
-							</div>
-						</div>
-					</div>
-					<div class="right-img invisible lg:visible lg:col-span-2 animate-right show-on-scroll">
+        <section class="about">
+            <div class="container grid mx-auto grid-cols-1 lg:grid-cols-6  " style="min-height: 100%;min-width: 100%;">
+                <div class="left-img invisible lg:visible lg:col-span-2 animate-left show-on-scroll"></div>
+                <div class="lg:col-span-2">
+                    <div class="container grid mx-auto grid-cols-1 pt-20">
+                        <div class="lg:col-span-1 ">
+                            <h1>OUR HISTORY</h1>
+                        </div>
+                        <div class="lg:col-span-1" align="center">
+                            <h4 class="history-text">
+                                The Physics and Astronomy Club IIT Delhi, <br> is the successor to the <br> Astronomy Club of Indian Institute of Technology, Delhi,<br> which had been established in 2011, <br> and had been operational under <br> Technocracy,
+                                CAIC, IIT Delhi
+                            </h4>
+                        </div>
+                        <div class="astronomy lg:col-span-1">
+                            <img src="Figures/astronomy_club_inv.png" alt="ASTRONOMY CLUB" />
+                        </div>
+                    </div>
+                </div>
+                <div class="right-img invisible lg:visible lg:col-span-2 animate-right show-on-scroll">
 
-						
-					</div>
-				</div>
-				
-			</section>
 
-			<section class="what">
-				<h1>WHAT DO WE DO?</h1>
-				<p>
-					<b>Sky observations:</b><br />Both in-campus and short excursions for
-					observation of the night sky, guided by either members from the club
-					or professional guides to learn to observe, identify and deduce the
-					properties of objects visible in the night sky through a telescope<br /><br /><b
-						>Guest Lectures and Workshops:</b
+                </div>
+            </div>
+
+        </section>
+
+        <section class="what">
+            <h1>WHAT DO WE DO?</h1>
+            <p>
+                <b>Sky observations:</b><br />Both in-campus and short excursions for observation of the night sky, guided by either members from the club or professional guides to learn to observe, identify and deduce the properties of objects visible
+                in the night sky through a telescope<br /><br /><b>Guest Lectures and Workshops:</b
 					><br />Lectures and workshops on several topics in Physics, Astronomy
 					and Mathematics by faculty from colleges and research institutes from
-					across India and abroad<br /><br /><b>Discussions:</b><br />Open
-					discussions on recent and/or important topics in Physics, Mathematics
-					and Astronomy between members of the club and guests, may or may not
-					be aided by a professor<br /><br /><b>Competitive Events:</b
+					across India and abroad<br /><br /><b>Discussions:</b><br />Open discussions on recent and/or important topics in Physics, Mathematics and Astronomy between members of the club and guests, may or may not be aided by a professor<br /><br /><b>Competitive Events:</b
 					><br />Prepare for and participate in inter-college and
 					interinstitution events in the fields of Physics, Astronomy,
 					Mathematics, Design and Robotics.<br /><br /><b>Miscellaneous:</b
@@ -399,9 +359,10 @@
 				<div class="footer-nav">
 					<ul>
 						<li><a href="#" class="nav-link" id="active">HOME</a></li>
+						<li><a href="https://home.iitd.ac.in/" class="nav-link" id="active">IIT DELHI</a></li>
 						<li><a href="team.html" class="nav-link">TEAM</a></li>
 						<li><a href="#" class="nav-link">PROJECTS</a></li>
-						<li><a href="contact.html" class="nav-link">CONTACT</a></li>
+						<li><a href="contact.html" class="nav-link">CONTACT US</a></li>
 					</ul>
 				</div>
 			</div>
