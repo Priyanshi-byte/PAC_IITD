@@ -95,6 +95,27 @@ header {
     margin-bottom: 12vh;
 }
 
+.curiosity{
+	background: url('../Figures/rover.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+  	top: 50vh;
+    height: 50vh;
+    width: 30vw;
+    z-index: 4;
+
+    /*for animations*/
+    opacity: 0;
+
+    -webkit-transition: opacity 2s .25s ease-out;
+    transition: opacity 3s .25s ease-out;
+    will-change: opacity;
+}
+.curiosity.is-visible{
+	opacity: 1;
+}
+
+
 nav {
     margin-top: -10px;
     position: fixed;

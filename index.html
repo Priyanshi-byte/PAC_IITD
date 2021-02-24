@@ -20,6 +20,7 @@
 
         window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
+            document.querySelectorAll('.curiosity')[0].style.left = currentScrollPos/5 + "vh";
             document.getElementsByTagName("nav")[0].setAttribute("style", "background-color: rgba(0, 0, 0, " + Math.pow((currentScrollPos) / scrollValue, 2) + ");");
             if (prevScrollpos >= currentScrollPos) {
                 document.getElementsByTagName("nav")[0].style.transitionDuration = "0.5s";
@@ -72,9 +73,11 @@
                 <br />
                 <c>MARTIAN SCENERY CAPTURED BY CURIOSITY: NASA/JPL-CALTECH/MSSS</c>
             </div>
+
         </div>
     </header>
     <main>
+    	<div class="curiosity show-on-scroll"></div>
         <!-- <section class="welcome">
             <div class='title'>
                 <h1><b>THE PHYSICS & ASTRONOMY CLUB</b><br> IIT DELHI</h1>
