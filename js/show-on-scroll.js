@@ -6,6 +6,7 @@ var scroll = window.requestAnimationFrame ||
 
 var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
 var persons = document.querySelectorAll('.person_card'); 
+var posters = document.querySelectorAll('.poster');
 
 function loop() {
 
@@ -18,6 +19,14 @@ function loop() {
   });
 
   persons.forEach(function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('is-visible');
+    } else {
+      element.classList.remove('is-visible');
+    }
+  });
+
+  posters.forEach(function (element) {
     if (isElementInViewport(element)) {
       element.classList.add('is-visible');
     } else {
