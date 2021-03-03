@@ -14,26 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 
-    <script type="text/javascript">
-        var scrollValue = 3 * window.screen.height / 4;
-        var prevScrollpos = window.pageYOffset;
-
-        window.onscroll = function() {
-            var currentScrollPos = window.pageYOffset;
-            document.querySelectorAll('.curiosity')[0].style.left = currentScrollPos/5 + "vh";
-            document.getElementsByTagName("nav")[0].setAttribute("style", "background-color: rgba(0, 0, 0, " + Math.pow((currentScrollPos) / scrollValue, 2) + ");");
-            if (prevScrollpos >= currentScrollPos) {
-                document.getElementsByTagName("nav")[0].style.transitionDuration = "0.5s";
-                document.getElementsByTagName("nav")[0].style.top = "0";
-            } else {
-                if (currentScrollPos > scrollValue) {
-                    document.getElementsByTagName("nav")[0].style.transform = "translateY(-20vh)";
-                    document.getElementsByTagName("nav")[0].style.transitionDuration = "1s";
-                }
-            }
-            prevScrollpos = currentScrollPos;
-        };
-    </script>
 </head>
 
 <body>
@@ -50,7 +30,9 @@
                 <li><a class="nav-item" href="contact.html">CONTACT US</a></li>
             </ul>
         </nav>
-        <div class="headline">
+    </header>
+    <main>
+        <section class="headline">
             <div class="inner">
                 <div class="title">
                     <h1>
@@ -73,11 +55,9 @@
                 <br />
                 <c>MARTIAN SCENERY CAPTURED BY CURIOSITY: NASA/JPL-CALTECH/MSSS</c>
             </div>
+			<div class="curiosity show-on-scroll"></div>
 
-        </div>
-    </header>
-    <main>
-    	<div class="curiosity show-on-scroll"></div>
+        </section>
         <!-- <section class="welcome">
             <div class='title'>
                 <h1><b>THE PHYSICS & ASTRONOMY CLUB</b><br> IIT DELHI</h1>
@@ -147,6 +127,7 @@
 
 			<section class="events">
 				<h1>PAST EVENTS</h1>
+				<div class="all-posters">
 				<div class="posters">
 					<div class="poster">
 						<div class="card-wrap">
@@ -157,6 +138,8 @@
 								<div class="card-back">
 									<input type="checkbox" id="expanded1">
 									<h1>Introductory Astrophysics</h1>		
+									<h4>19th Feb '20</h4>
+									<br/>
 									<p class="truncated">
 									Isn't it a mystery for all of us how the universe works outside Earth? All of us have wondered and many inspired by it since their childhood. Right now, we think it would be a great opportunity for us to organize a talk on "Introductory Astrophysics". It shall be a very interesting event to explore the basics across the length and breadth of a topic less prominent in our institution. And it would also be a great experience added to the observations that we hold regularly.									
 									</p>
@@ -172,6 +155,8 @@
 								<div class="card-back">
 									<input type="checkbox" id="expanded2">
 									<h1>Richard Feynman</h1>		
+									<h4>11th Feb '20</h4>
+									<br/>
 									<p class="truncated">
 										Six easy pieces, Surely you're joking, Mr Feynman, The Pleasure of Finding Things Out, does it all sound a bit familiar? Well, then we have something of real interest for your enthusiastic curious souls. This Tuesday, the 11th of February, Physics and Astronomy Club is bringing to all the skeptics, to the ones who have faith in nature's simple truths, our very own inspiration, Mr Richard Feynman. He is considered by many as the most brilliant, influential and eccentric figure. A Nobel prize winning physicist, he's well know for his contributions to quantum physics, particle physics, quantum computing and nano technology. He changed the way basic physical processes are conceptualised and calculated. Feynman showed us the art of using colloquial, no frills language and everyday examples, to explain complex problems. We bring to you one of the greatest minds in the history of physics, be with us this Tuesday for the documentary screening of Mr Richard Feynman.
 									</p>
@@ -190,6 +175,8 @@
 									<div class="card-back">
 										<input type="checkbox" id="expanded3">
 										<h1>Relativity in 21st century</h1>		
+										<h4>23rd Apr '19</h4>
+										<br/>
 										<p class="truncated">
 											How often have you been into conversations about 'Relativity' and 'Spacetime' with your friends? Want to know what's going on in with Relativity in the modern day and age?
 											A talk on experiments and the present happenings in Relativity in recent times. We can promise you a lot of interesting stories and exciting physics to think about for an hour. Do join us!
@@ -210,6 +197,8 @@
 									<div class="card-back">
 										<input type="checkbox" id="expanded4">
 										<h1>Space Missions</h1>		
+										<h4>29th Sept '19</h4>
+										<br/>
 										<p class="truncated">
 											Planned you post minor trip yet? Perhaps you're on the Rendezvous hype train? Well, we've just brought you another thing for you to get hung up on!
 											This Sunday, we're going to be kicking off a 3-part lecture series covering all aspects of space missions, the planning, execution and future of our conquest to wrap the entire universe within our fingertips.
@@ -233,6 +222,8 @@
 								<div class="card-back">
 									<input type="checkbox" id="expanded5">
 									<h1>Science in Space</h1>		
+									<h4>30th Sept '19</h4>
+									<br/>
 									<p class="truncated">
 										What comes to mind when you hear Moon/Mars human exploration, Deep space engineering or exo-planets? Cool words, right? But apart from being fancy, what do these mars/moon missions and deep space exploration missions hope to learn?
 										Don't have an answer? Not to worry, it's quite common for people to get overwhelmed by the sheer novelty of outer space that they forget to think about why each mission is launched.
@@ -254,6 +245,8 @@
 								<div class="card-back">
 									<input type="checkbox" id="expanded7">
 									<h1>Quark Science</h1>		
+									<h4>21st Feb '20</h4>
+									<br/>
 									<p class="truncated">
 									The quantum realm is quite a mystery to the world. The inhabitants of the it, even more so! There's the family of Quarks, Bosons, Leptons and dont even get me started on the specific names of each of 'em! It goes from cool to odd to down right WHAA? real quick!
 									There're even quarks named the "strange" quark and the "charm" quark! (talk about being biased, huh!)
@@ -272,6 +265,8 @@
 								<div class="card-back">
 									<input type="checkbox" id="expanded7">
 									<h1>Cosmo Conference</h1>		
+									<h4>10th Feb '19</h4>
+									<br/>
 									<p class="truncated">
 										Join us this Sunday as Physics and Astronomy Club(PAC) presents to you CosmoConference 2019!
 										It's going to be a small and interactive discussion on Cosmology and interesting tidbits about it.
@@ -282,6 +277,7 @@
 							</div>
 						</div>
 					</div>
+				</div>
 				</div>
 			</section>
 
@@ -378,6 +374,7 @@
 
 		<script src="js/show-on-scroll.js"></script>
 		<!-- <script src="js/index.js"></script> -->
+		<script src="js/scroll.js"></script>
 		<script
 			async
 			defer

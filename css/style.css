@@ -20,23 +20,35 @@ body::-webkit-scrollbar {
     display: none;
     /* Safari and Chrome */
 }
+main::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
+}
 
 html {
     scroll-behavior: smooth;
     font-family: sans-serif;
-    /*scroll-snap-type: proximity; */
-    /*	scroll-snap-points-y: repeat(100vh);
-	scroll-snap-type: y proximity;*/
-    /* scroll-padding-top: 95px; */
 }
 
 section {
     padding: 1rem;
     min-height: 100vh;
-    /*	scroll-snap-align: start;
-	scroll-snap-stop: always;*/
-    text-align: center;
+    display: flex;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+	text-align: center;
     position: relative;
+}
+
+main {
+    background-color: rgb(43, 106, 116);
+    margin-bottom: 65vh;
+    scroll-snap-type: y mandatory;
+    flex-basis: 50%;
+    scroll-snap-stop: always;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 100vh;
 }
 
 header {
@@ -397,11 +409,6 @@ footer {
     color: white;
 }
 
-main {
-    background-color: rgb(43, 106, 116);
-    margin-bottom: 65vh;
-}
-
 .welcome {
     padding: 5px;
     min-height: 100vh;
@@ -615,7 +622,7 @@ section h1 {
     background-image: url('../Figures/veil_nebula.jpg');
     background-size: cover;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
     text-align: center;
     color: white;
@@ -628,16 +635,27 @@ section h1 {
     font-weight: 600;
 }
 
-.events {
-    display: flex;
-    justify-content: space-around;
-}
-
 .events img {
     background-color: white;
     padding: 10px;
-    max-width: 80vw;
+    max-width: 60vw;
     max-height: 60vh;
+}
+
+.all-posters {
+    display:flex;
+    max-width: 60vw;
+    justify-content: stretch;
+    flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+    .events {
+        max-height: 100vh;
+    }
+    .all-posters {
+        max-width: 55vw;
+    }
 }
 
 .posters {
@@ -740,9 +758,13 @@ section h1 {
     height: 100%;
 }
 
-.card p {
-    font-size: 16px;
+.card-back>p {
+    font-size: 12px;
     text-overflow: ellipsis;
+}
+
+.card-back>h1 {
+    font-size: 28px;
 }
 
 .updates {
