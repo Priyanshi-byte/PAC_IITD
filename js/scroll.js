@@ -5,8 +5,8 @@ document.getElementsByTagName("main")[0].onscroll = function() {
     var currentScrollPos = document.getElementsByTagName("main")[0].scrollTop;
     // document.querySelectorAll('.curiosity')[0].style.left = currentScrollPos/5 + "vh";
     if (currentScrollPos <= 500) {
-        document.querySelectorAll('.curiosity')[0].style.transform = "translateX(" + (currentScrollPos/5).toString() + "vh)";
-        document.querySelectorAll('.curiosity')[0].style.transitionDuration = "1s";
+        document.querySelectorAll('.curiosity')[0].style.transform = "translateX(" + (currentScrollPos/10).toString() + "vh)";
+        document.querySelectorAll('.curiosity')[0].style.transitionDuration = "5s";
     }
     document.getElementsByTagName("nav")[0].setAttribute("style", "background-color: rgba(0, 0, 0, " + Math.pow((currentScrollPos) / scrollValue, 2) + ");");
     if (prevScrollpos >= currentScrollPos) {
