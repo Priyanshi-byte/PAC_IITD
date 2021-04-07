@@ -31,13 +31,14 @@ html {
 }
 
 section {
-    padding: 1rem;
+    /*padding: 1rem;*/
     min-height: 100vh;
     display: flex;
     scroll-snap-align: start;
     scroll-snap-stop: always;
 	text-align: center;
     position: relative;
+    overflow-x: hidden;
 }
 
 main {
@@ -58,6 +59,7 @@ header {
 
 .headline {
     position: relative;
+    width: 100vw;
     height: 100vh;
     color: #fff;
     text-align: center;
@@ -156,12 +158,13 @@ nav li {
 }
 
 nav a {
-    text-decoration: none;
-    color: #fff;
+    text-decoration: none !important;
+    color: #fff !important;
 }
 
 .nav-item {
     position: relative;
+
 }
 
 .nav-item:after {
@@ -172,6 +175,7 @@ nav a {
     display: block;
     margin-top: 5px;
     right: 0;
+
     background: #fff;
     transition: width 0.5s ease;
     -webkit-transition: width 0.5s ease;
@@ -180,7 +184,9 @@ nav a {
 .nav-item:hover:after {
     width: 100%;
     left: 0;
+
     background: #fff;
+
 }
 
 .logo {
@@ -576,6 +582,19 @@ section h1 {
     text-align: center;
     /*background-attachment: fixed;*/
 }
+.what h1{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    position:absolute;
+    left: 30%; 
+    right: 30%; 
+    z-index: 11;
+
+}
+.what .carousel-item{
+    padding-top: 20vh;
+}
 
 .team_execs {
     background-image: url('../Figures/stars.jpg');
@@ -615,142 +634,142 @@ section h1 {
 }
 
 .abhinav_pic{
-    background: url(../assests/images/team/Abhinav_Singh_OC_cropped.jpeg);
+    background: url(../assets/images/team/Abhinav_Singh_OC_cropped.jpeg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .sanaz_pic{
-    background: url(../assests/images/team/Sanaz_Agarwal_Coordi.jpg);
+    background: url(../assets/images/team/Sanaz_Agarwal_Coordi.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .pranjal_pic{
-    background: url(../assests/images/team/Pranjal_Rai.jpg);
+    background: url(../assets/images/team/Pranjal_Rai.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .pushpit_pic{
-    background: url(../assests/images/team/Pushpit_Srivastava_Coordi.jpg);
+    background: url(../assets/images/team/Pushpit_Srivastava_Coordi.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .priyanshi_pic{
-    background: url(../assests/images/team/Priyanshi_Coordi.jpg);
+    background: url(../assets/images/team/Priyanshi_Coordi.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .nandan_pic{
-    background: url(../assests/images/team/Nandan_I_P.png);
+    background: url(../assets/images/team/Nandan_I_P.png);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .prabhpreet_pic{
-    background: url(../assests/images/team/Prabhpreet.jpeg);
+    background: url(../assets/images/team/Prabhpreet.jpeg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .agrim_pic{
-    background: url(../assests/images/team/Agrim_Singh.jpg);
+    background: url(../assets/images/team/Agrim_Singh.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .aakash_pic{
-    background: url(../assests/images/team/Aakash_Goel.jpg);
+    background: url(../assets/images/team/Aakash_Goel.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .anirudha_pic{
-    background: url(../assests/images/team/Anirudha_Kulkarni.jpg);
+    background: url(../assets/images/team/Anirudha_Kulkarni.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .arpit_pic{
-    background: url(../assests/images/team/ArpitHarit.jpg);
+    background: url(../assets/images/team/ArpitHarit.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .avantika_pic{
-    background: url(../assests/images/team/Avantika_Agarwal.jpg);
+    background: url(../assets/images/team/Avantika_Agarwal.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .dhruv_pic{
-    background: url(../assests/images/team/Dhruv_Kumar_Gupta.jpg);
+    background: url(../assets/images/team/Dhruv_Kumar_Gupta.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .gurusha_pic{
-    background: url(../assests/images/team/Gurusha_Juneja.jpeg);
+    background: url(../assets/images/team/Gurusha_Juneja.jpeg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .hari_pic{
-    background: url(../assests/images/team/Hari_Shankar.jpg);
+    background: url(../assets/images/team/Hari_Shankar.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .ishan_pic{
-    background: url(../assests/images/team/Ishan_Agrawal.jpg);
+    background: url(../assets/images/team/Ishan_Agrawal.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .keshav_pic{
-    background: url(../assests/images/team/Keshav.jpeg);
+    background: url(../assets/images/team/Keshav.jpeg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .meenal_pic{
-    background: url(../assests/images/team/Meenal_Sharma.jpg);
+    background: url(../assets/images/team/Meenal_Sharma.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .mustafa_pic{
-    background: url(../assests/images/team/Mustafa_Chasmai.jpg);
+    background: url(../assets/images/team/Mustafa_Chasmai.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .opal_pic{
-    background: url(../assests/images/team/Opal.jpg);
+    background: url(../assets/images/team/Opal.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .prakhar_pic{
-    background: url(../assests/images/team/Prakhar_Bangaria.jpg);
+    background: url(../assets/images/team/Prakhar_Bangaria.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .parnjal_ag_pic{
-    background: url(../assests/images/team/Pranjal_Aggarwal.png);
+    background: url(../assets/images/team/Pranjal_Aggarwal.png);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .pranshu_pic{
-    background: url(../assests/images/team/Pranshu_Bhagat.JPG);
+    background: url(../assets/images/team/Pranshu_Bhagat.JPG);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .riya_pic{
-    background: url(../assests/images/team/Riya_Sharma.jpg);
+    background: url(../assets/images/team/Riya_Sharma.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .sagar_pic{
-    background: url(../assests/images/team/Sagar_Sharma.jpg);
+    background: url(../assets/images/team/Sagar_Sharma.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .saptarshi_pic{
-    background: url(../assests/images/team/saptarshi.jpg);
+    background: url(../assets/images/team/saptarshi.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .yashasvi_pic{
-    background: url(../assests/images/team/Yashasvi_Ghadale.jpg);
+    background: url(../assets/images/team/Yashasvi_Ghadale.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 .yashvardhan_pic{
-    background: url(../assests/images/team/Yashvardhan_Singh.jpg);
+    background: url(../assets/images/team/Yashvardhan_Singh.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
