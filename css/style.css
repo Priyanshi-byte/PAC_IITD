@@ -541,20 +541,20 @@ section h1 {
 }
 
 .what p {
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
-    max-width: 50vw;
+    max-width: 58vw;
 }
 
 .about p b,
 .what p b {
-    font-size: 25px;
+    font-size: 38px;
     color: rgb(253, 221, 83);
     font-weight: 600;
 }
 
 .what {
-    padding: 5px;
+    /*padding: 5px;*/
     background-image: url('../Figures/bubble.jpg');
     background-size: cover;
     background-position: center;
@@ -568,6 +568,22 @@ section h1 {
 
 .what p {
     transform: translateX(50%);
+}
+
+.what_observation {
+    padding-top: 25vh !important;
+    padding-right: 0vw !important;
+    background-image: url('../Figures/observations.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: right;
+    min-height: 100vh;
+    /*background-attachment: fixed;*/
+
 }
 
 .team {
