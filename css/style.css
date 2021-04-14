@@ -998,6 +998,99 @@ section h1 {
     text-align: center;
 }
 
+#events.updates {
+    padding-top: 5vh;
+    background-image: url('../Figures/tryst.jpg');
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#events.updates h2 {
+    color: white;
+    font-size: 150%;
+    background-size: cover;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#events.updates h2:hover {
+    background-image: url('../Figures/back2.jpeg');
+    cursor: pointer;
+}
+
+#events_display {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    min-height: 40vh;
+    width: 100%;
+}
+
+#column1 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#column2 {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#details.updates {
+    background: none;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#details.updates h1 {
+    margin-top: 0px;
+}
+
+.tryst_logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#tryst_logo {
+    height: 20vh;
+    background-image: url('../Figures/tryst_logo.png');
+    background-size: cover;
+    width: 20vh;
+}
+
+#PAC_logo {
+    height: 20vh;
+    background-image: url('../Figures/logo_transparent.png');
+    background-size: cover;
+    width: 20vh;
+}
+
+#discussion.updates {
+    padding-top: 0vh;
+    background: none;
+    color: black;
+}
+
+#disqus_thread {
+    padding: 5vh;
+    background-color: white;
+    margin-right: 20vh;
+    margin-left: 20vh;
+}
+
 .updates h1 {
     font-size: 45px;
     font-weight: 600;
