@@ -586,6 +586,8 @@ section h1 {
     font-weight: 600;
     position: absolute;
     z-index: 11;
+    left: 30%;
+    right: 30%;
 }
 
 .team {
