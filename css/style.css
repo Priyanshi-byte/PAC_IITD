@@ -574,11 +574,10 @@ section h1 {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid white;
-    transform: translateX(33%);
     cursor: pointer;
     position: absolute;
-    left: 40%;
-    right: 40%;
+    left: 44%;
+    right: 44%;
 }
 
 .what h1 {
@@ -586,8 +585,6 @@ section h1 {
     font-size: 45px;
     font-weight: 600;
     position: absolute;
-    left: 30%;
-    right: 30%;
     z-index: 11;
 }
 
