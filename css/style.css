@@ -1002,7 +1002,7 @@ section h1 {
 
 #events.updates {
     padding-top: 5vh;
-    background-image: url('../Figures/tryst.jpg');
+    background-image: url('../Figures/tryst_bg.png');
     min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
