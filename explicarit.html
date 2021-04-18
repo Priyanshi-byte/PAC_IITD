@@ -13,7 +13,7 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PAC IITD | HOME</title>
+    <title>PAC IITD | EARTHVERSE</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" href="Figures/PAC.png" type="image" sizes="48x48" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -23,8 +23,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
 
 
-</head>
 
+</head>
 
 <body>
     <header>
@@ -36,33 +36,52 @@
                 <li><a class="nav-item active" href="index.html">HOME</a></li>
                 <li><a class="nav-item active" href="https://home.iitd.ac.in/">IIT DELHI</a></li>
                 <li><a class="nav-item" href="team.html">TEAM</a></li>
-                <li><a class="nav-item" href="#">TRYST'21</a></li>
+                <li><a class="nav-item" href="tryst21.html">TRYST'21</a></li>
                 <li><a class="nav-item" href="contact.html">CONTACT US</a></li>
             </ul>
         </nav>
     </header>
     <main>
 
-        <section class="updates" id="events">
-            <h1><b>TRYST'21</b></h1>
-            <h1>
-                <b>THE PHYSICS & ASTRONOMY CLUB</b><br /> IIT DELHI
-            </h1>
-            <div id="events_display">
-                <div id='column1'>
-                    <a href="earthverse.html">
-                        <h2>EARTHVERSE </h2>
-                    </a>
-                </div>
-                <div id='column2'>
-                    <a href="explicarit.html">
-                        <h2>EXPLICARIT </h2>
-                    </a>
-                </div>
+        <section class="updates" id="events_tryst">
+            <h1><b>EXPLICARIT</h1>
+            <marquee direction='right'><h1><b>COMING SOON</b></h1>
+            </marquee>
+
             </div>
+        </section>
+
+
+        <section class="updates" id="details">
+            <h1>REGISTRATION</h1>
+            <h2>COMING SOON </h2>
 
         </section>
 
+        <section class="updates" id="discussion">
+            <h1>DISCUSSION</h1>
+            <div id="disqus_thread">
+                <script>
+                    /**
+                     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+                    /*
+                    var disqus_config = function () {
+                    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                    };
+                    */
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                        var d = document,
+                            s = d.createElement('script');
+                        s.src = 'https://paciitd.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -119,10 +138,6 @@
     <!-- <script src="js/index.js"></script> -->
     <script src="js/scroll.js"></script>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v9.0" nonce="bsM0tB3t"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-    <script src="./js/index.js"></script>
 </body>
 
 </html>
