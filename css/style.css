@@ -591,18 +591,9 @@ section h1 {
     right: 30%;
 }
 
-
-
-
-
-.what-we-do-carousel{
-    height: 100vh;"    
+.what-we-do-carousel {
+    height: 100vh;
 }
-
-
-
-
-
 
 .team {
     background-image: url('../Figures/stars.jpg');
@@ -1380,33 +1371,32 @@ bi {
         margin-top: 0vh;
         margin-bottom: -5vh;
     }
-
-    .what-we-do-carousel{
+    .what-we-do-carousel {
         height: 100vh;
         margin-left: -120vw;
         width: 340vw;
         background-color: rgba(0, 0, 0, 0.5) !important;
     }
-    .what-we-do-head{
+    .what-we-do-head {
         /*width: 100% !important;*/
         text-align: center !important;
         margin-left: -5vw !important;
     }
-    .carousel-caption{
+    .carousel-caption {
         text-align: center !important;
         padding: 0 !important;
         padding-left: 75vw !important;
     }
-    .v_space_40{
+    .v_space_40 {
         min-height: 75vh;
     }
-    .v_space_45{
+    .v_space_45 {
         min-height: 75vh;
     }
-    .v_space_40{
+    .v_space_40 {
         min-height: 75vh;
     }
-    .what-button{
+    .what-button {
         /*margin-top: 80vh !important;
         position: absolute;
         left: 65vw !important;
