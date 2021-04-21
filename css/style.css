@@ -555,6 +555,7 @@ section h1 {
     /*padding: 5px;*/
     display: flex;
     color: white;
+    min-height: 5vh;
 }
 
 .v_space_40 {
@@ -1192,11 +1193,30 @@ section h1 {
     max-height: 30vh;
 }
 
+.burger {
+    position: absolute;
+    font-family: sans-serif;
+    top: 0;
+    left: 0;
+    transform: translate(90vw, 2vh);
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+    color: white;
+    z-index: 150;
+    display: none;
+}
+
 @media only screen and (max-width: 1200px) {
     .inner h1 b,
-    .inner h1 {
+    .inner h1,
+    section h1,
+    .what h1,
+    .events h1,
+    .updates h1 {
         font-size: 40px;
     }
+    .inner p,
     .what p {
         font-size: 16px;
     }
@@ -1204,33 +1224,83 @@ section h1 {
 
 @media only screen and (max-width: 1000px) {
     .inner h1 b,
-    .inner h1 {
+    .inner h1,
+    section h1,
+    .what h1,
+    .events h1,
+    .updates h1 {
         font-size: 34px;
     }
     .what p {
         font-size: 15px;
     }
+    .nav-item {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .inner h1 b,
+    .inner h1,
+    section h1,
+    .what h1,
+    .events h1,
+    .updates h1 {
+        font-size: 30px;
+        padding-top: 5vh;
+    }
+    .what p {
+        font-size: 14px;
+    }
+    .nav-item {
+        font-size: 15px;
+    }
+    .title-button button a,
+    .what-button button a {
+        font-size: 15px;
+    }
+    .what p b,
+    .about p b {
+        font-size: 24px;
+    }
+    .what p,
+    .about p {
+        transform: translateY(150%);
+    }
 }
 
 @media only screen and (max-width: 700px) {
-    .nav-links ul li a,
-    .footer-nav ul li a {
-        font-size: 12px;
+    .nav-item {
+        font-size: 14px;
     }
     .copyright p {
-        font-size: 10px;
+        font-size: 12px;
     }
-    h1 {
-        font-size: 36px;
+    .inner h1 b,
+    .inner h1,
+    section h1,
+    .what h1,
+    .events h1,
+    .updates h1 {
+        font-size: 28px;
     }
-    p {
-        font-size: 15px;
+    .what p,
+    .inner p {
+        font-size: 14px;
     }
-    button a {
-        font-size: 15px;
+    .nav-item {
+        font-size: 14px;
+    }
+    .title-button button a,
+    .what-button button a {
+        font-size: 11px;
+    }
+    .what p b,
+    .about p b {
+        font-size: 18px;
     }
     .history-text {
-        font-size: 20px;
+        font-size: 14px;
         margin-top: 0vh;
         margin-bottom: -5vh;
     }
@@ -1244,8 +1314,39 @@ section h1 {
 }
 
 @media only screen and (max-width: 600px) {
-    h1 {
-        font-size: 34px;
+    .nav-item {
+        font-size: 12px;
+    }
+    .copyright p {
+        font-size: 11px;
+    }
+    .inner h1 b,
+    .inner h1,
+    section h1,
+    .what h1,
+    .events h1,
+    .updates h1 {
+        font-size: 26px;
+    }
+    .what p,
+    .inner p {
+        font-size: 12px;
+    }
+    .nav-item {
+        font-size: 12px;
+    }
+    .title-button button a,
+    .what-button button a {
+        font-size: 11px;
+    }
+    .what p b,
+    .about p b {
+        font-size: 16px;
+    }
+    .history-text {
+        font-size: 12px;
+        margin-top: 0vh;
+        margin-bottom: -5vh;
     }
 }
 
@@ -1261,44 +1362,66 @@ section h1 {
         top: 15vh;
         width: 100vw;
         height: 85vh;
-        z-index: 10;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        z-index: 110;
     }
-    .nav-links ul {
-        height: 100%;
+    ul.nav-links {
+        height: 80vh;
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
         text-align: center;
     }
-    .nav-links ul li a {
-        color: black;
-        border-bottom: 2px solid white;
+    a.nav-item {
+        background-color: black;
+        padding: 2vh;
+        z-index: 150;
+        border-radius: 10px;
         font-weight: bold;
         text-decoration: none;
     }
-    .nav-links ul li a:hover {
-        border-color: rgb(43, 106, 116);
-        color: rgb(43, 106, 116);
-    }
     .burger {
         display: block;
+        z-index: 110;
+        cursor: pointer;
+    }
+    .burger h1 {
+        cursor: pointer;
     }
     .nav-links-active {
         transform: translateX(0%);
     }
-    h1 {
-        font-size: 32px;
+    .copyright p {
+        font-size: 11px;
     }
-    .what p b {
+    .inner h1 b,
+    .inner h1,
+    section h1,
+    .what h1,
+    .events h1,
+    .updates h1 {
+        font-size: 26px;
+    }
+    .what p,
+    .inner p {
+        font-size: 12px;
+    }
+    .nav-item {
+        font-size: 12px;
+    }
+    .title-button button a,
+    .what-button button a {
+        font-size: 11px;
+    }
+    .what p b,
+    .about p b {
         font-size: 16px;
     }
-    p {
-        font-size: 14px;
-    }
-    button a {
-        font-size: 14px;
+    .history-text {
+        font-size: 12px;
+        margin-top: 0vh;
+        margin-bottom: -5vh;
     }
     .inner c,
     section c {
@@ -1329,17 +1452,36 @@ section h1 {
     .footer-nav {
         min-height: 25vh;
     }
-    h1 {
-        font-size: 30px;
+    .copyright p {
+        font-size: 11px;
     }
-    p {
+    .inner h1 b,
+    .inner h1,
+    section h1,
+    .what h1,
+    .events h1,
+    .updates h1 {
+        font-size: 20px;
+    }
+    .what p,
+    .inner p {
         font-size: 12px;
     }
-    .what p b {
+    .nav-item {
+        font-size: 12px;
+    }
+    .title-button button a,
+    .what-button button a {
+        font-size: 12px;
+    }
+    .what p b,
+    .about p b {
         font-size: 14px;
     }
-    button a {
-        font-size: 12px;
+    .history-text {
+        font-size: 14px;
+        margin-top: 0vh;
+        margin-bottom: -5vh;
     }
     .inner c,
     section c {
@@ -1358,8 +1500,16 @@ section h1 {
 }
 
 @media only screen and (max-width: 410px) {
-    h1 {
-        font-size: 26px;
+    .copyright p {
+        font-size: 11px;
+    }
+    .inner h1 b,
+    .inner h1,
+    section h1,
+    .what h1,
+    .events h1,
+    .updates h1 {
+        font-size: 20px;
     }
 }
 
@@ -1382,7 +1532,7 @@ section h1 {
     .what h1,
     .events h1,
     .updates h1 {
-        font-size: 24px;
+        font-size: 18px;
     }
     .what p b {
         font-size: 12px;
