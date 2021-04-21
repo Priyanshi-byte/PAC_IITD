@@ -1003,7 +1003,7 @@ section h1 {
 
 #events.updates {
     padding-top: 5vh;
-    background-image: url('../Figures/tryst_bg_2.png');
+    background-image: url('../Figures/tryst_bg.png');
     min-height: 100vh;
     display: flex;
     justify-content: space-evenly;
@@ -1049,8 +1049,8 @@ section h1 {
 
 #earthverse_1 {
     margin: auto;
-    width: 40vh;
-    height: 40vh;
+    width: 30vh;
+    height: 30vh;
     background-image: url('../Figures/earthverse.jpg');
     background-size: cover;
     background-repeat: none;
@@ -1060,8 +1060,8 @@ section h1 {
 
 #earthverse_2 {
     margin: auto;
-    width: 40vh;
-    height: 40vh;
+    width: 30vh;
+    height: 30vh;
     background-image: url('../Figures/earthverse2.jpeg');
     background-size: cover;
     background-repeat: none;
@@ -1071,8 +1071,19 @@ section h1 {
 
 #events.updates h1 {
     background-color: rgba(0, 0, 0, 0.445);
-    padding: px;
+    padding: 10px;
     border-radius: 5px;
+}
+
+b {
+    color: white;
+    font-size: 30px;
+}
+
+bi {
+    color: black;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 #events.updates a h2 {
@@ -1164,8 +1175,8 @@ section h1 {
 #disqus_thread {
     padding: 5vh;
     background-color: white;
-    margin-right: 20vh;
-    margin-left: 20vh;
+    margin-right: 5vh;
+    margin-left: 5vh;
 }
 
 .updates h1 {
@@ -1231,7 +1242,9 @@ section h1 {
     .updates h1 {
         font-size: 34px;
     }
-    .what p {
+    .what p,
+    #details.updates h2,
+    #events_tryst.updates h2 {
         font-size: 15px;
     }
     .nav-item {
@@ -1249,7 +1262,9 @@ section h1 {
         font-size: 30px;
         padding-top: 5vh;
     }
-    .what p {
+    .what p,
+    #details.updates h2,
+    #events_tryst.updates h2 {
         font-size: 14px;
     }
     .nav-item {
@@ -1285,7 +1300,9 @@ section h1 {
         font-size: 28px;
     }
     .what p,
-    .inner p {
+    .inner p,
+    #details.updates h2,
+    #events_tryst.updates h2 {
         font-size: 14px;
     }
     .nav-item {
@@ -1329,7 +1346,9 @@ section h1 {
         font-size: 26px;
     }
     .what p,
-    .inner p {
+    .inner p,
+    #details.updates h2,
+    #events_tryst.updates h2 {
         font-size: 12px;
     }
     .nav-item {
@@ -1355,13 +1374,31 @@ section h1 {
     html {
         overflow-x: hidden;
     }
+    #earthverse {
+        flex-direction: column;
+        min-height: 90vh;
+    }
+    #earthverse_1 {
+        width: 40vh;
+        height: 40vh;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+    #earthverse_2 {
+        height: 40vh;
+        width: 40vh;
+        margin-bottom: 5vh;
+    }
+    #events.updates a h2 {
+        font-size: 18px;
+    }
     .nav-links {
-        background-color: white;
+        background-color: black;
         position: absolute;
         right: 0px;
         top: 15vh;
         width: 100vw;
-        height: 85vh;
+        height: 80vh;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         z-index: 110;
@@ -1374,7 +1411,6 @@ section h1 {
         text-align: center;
     }
     a.nav-item {
-        background-color: black;
         padding: 2vh;
         z-index: 150;
         border-radius: 10px;
@@ -1388,6 +1424,7 @@ section h1 {
     }
     .burger h1 {
         cursor: pointer;
+        font-size: 25px;
     }
     .nav-links-active {
         transform: translateX(0%);
@@ -1395,6 +1432,8 @@ section h1 {
     .copyright p {
         font-size: 11px;
     }
+    .h1,
+    h1,
     .inner h1 b,
     .inner h1,
     section h1,
@@ -1404,7 +1443,9 @@ section h1 {
         font-size: 26px;
     }
     .what p,
-    .inner p {
+    .inner p,
+    #details.updates h2,
+    #events_tryst.updates h2 {
         font-size: 12px;
     }
     .nav-item {
@@ -1464,7 +1505,9 @@ section h1 {
         font-size: 20px;
     }
     .what p,
-    .inner p {
+    .inner p,
+    #details.updates h2,
+    #events_tryst.updates h2 {
         font-size: 12px;
     }
     .nav-item {
@@ -1534,7 +1577,9 @@ section h1 {
     .updates h1 {
         font-size: 18px;
     }
-    .what p b {
+    .what p b,
+    #details.updates h2,
+    #details.updates h2 {
         font-size: 12px;
     }
     .welcome .title-des p,
