@@ -591,6 +591,19 @@ section h1 {
     right: 30%;
 }
 
+
+
+
+
+.what-we-do-carousel{
+    height: 100vh;"    
+}
+
+
+
+
+
+
 .team {
     background-image: url('../Figures/stars.jpg');
     /*background-image: url("../Figures/sunset.jpg");*/
@@ -642,252 +655,168 @@ section h1 {
 }
 
 .abhinav_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Abhinav_Singh_OC_cropped.jpeg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .sanaz_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Sanaz_Agarwal_Coordi.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .pranjal_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Pranjal_Rai.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .pushpit_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Pushpit_Srivastava_Coordi.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .priyanshi_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Priyanshi_Coordi.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .nandan_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Nandan_I_P.png);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .prabhpreet_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Prabhpreet.jpeg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .agrim_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Agrim_Singh.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .aakash_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Aakash_Goel.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .anirudha_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Anirudha_Kulkarni.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .arpit_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/ArpitHarit.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .avantika_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Avantika_Agarwal.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .dhruv_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Dhruv_Kumar_Gupta.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .gurusha_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Gurusha_Juneja.jpeg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .hari_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Hari_Shankar.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .ishan_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Ishan_Agrawal.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .keshav_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Keshav.jpeg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .meenal_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Meenal_Sharma.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .mustafa_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Mustafa_Chasmai.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .opal_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Opal.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .prakhar_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Prakhar_Bangaria.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .parnjal_ag_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Pranjal_Aggarwal.png);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .pranshu_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Pranshu_Bhagat.JPG);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .riya_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Riya_Sharma.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .sagar_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Sagar_Sharma.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .saptarshi_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/saptarshi.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .yashasvi_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Yashasvi_Ghadale.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
 }
 
 .yashvardhan_disp_pic {
-    color:white;
-    text-align: center;
-    justify-content: center;
     background: url(../assets/images/team/Yashvardhan_Singh.jpg);
     background-size: 200px;
     background-repeat: no-repeat;
@@ -1449,6 +1378,15 @@ bi {
     .history-text {
         font-size: 12px;
         margin-top: 0vh;
+        margin-bottom: -5vh;
+    }
+
+    .what-we-do-carousel{
+        height: 70vh;
+        margin-left: -65vw;
+        width: 230vw;
+    }
+    .what-we-do-head{
         margin-bottom: -5vh;
     }
 }
